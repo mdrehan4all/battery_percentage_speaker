@@ -1,0 +1,5 @@
+comtypes==1.1.14
+psutil==5.9.2
+pypiwin32==223
+pyttsx3==2.90
+pywin32==304
