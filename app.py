@@ -30,7 +30,7 @@ while True:
     if battery.percent >= 25:
         sleeptime = 60
     
-    if battery.percent >= 100:
+    if battery.percent >= 100 and battery.power_plugged == True:
         speak("Battery Full")
         
     time.sleep(sleeptime)
