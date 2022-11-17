@@ -3,7 +3,11 @@ This code is for windows pc, you can run this code in background and whenever yo
 
 # How to install
 1. Download and Install Python
-2. Install packages in requirements.txt file
-    pip install -r requirements.txt
+2. Install packages
+    pip install psutil
+    pip install pyttsx3
 3. Run app.py
     python app.py 
+
+4. If getting error for voices change the voice[0] to voice[1]
+   engine.setProperty('voice', voices[1].id)
