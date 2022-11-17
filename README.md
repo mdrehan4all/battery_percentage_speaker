@@ -11,3 +11,5 @@ This code is for windows pc, you can run this code in background and whenever yo
 
 4. If getting error for voices change the voice[0] to voice[1]
    engine.setProperty('voice', voices[1].id)
+   
+5. If you want to run at startup open run type "shell:startup" and paste hidebat.vbs to the folder, Note: Please check for the path and update according to your pc in vbs(for bettery.bat file).

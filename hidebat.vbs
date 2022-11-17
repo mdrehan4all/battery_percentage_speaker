@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "C:\Users\hp\battery_percentage_speaker\battery.bat", 0, True
