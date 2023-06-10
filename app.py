@@ -25,12 +25,13 @@ while True:
     print("charge = %s%%, time left = %s" % (battery.percent, secs2hours(battery.secsleft)))
     if battery.percent <= 15 and battery.power_plugged == False:
         speak("Give me charge")
-        sleeptime = 10
+        sleeptime = 20
         
-    if battery.percent >= 25:
-        sleeptime = 60
+    if battery.percent >= 16 and battery.percent <= 97:
+        sleeptime = 120
     
-    if battery.percent >= 100 and battery.power_plugged == True:
+    if battery.percent >= 98 and battery.power_plugged == True:
+        sleeptime = 20
         speak("Battery Full")
         
     time.sleep(sleeptime)
